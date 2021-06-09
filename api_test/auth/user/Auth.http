@@ -1,0 +1,39 @@
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJmNmM5MDVkMDQ0YzM4M2MwN2VjNGUiLCJpYXQiOjE2MjMxNzg0NzcsImV4cCI6MTYyMzE4MjA3N30.wbJ-x-GbmfSqz1gNeuIrEkJBFhaXvJ8ih7Cql9eQfeI
+
+###signup
+POST http://localhost:5000/api/signup HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"helloworld",
+    "lastName":"lastname",
+    "email":"email@gmail.com",
+    "password":"nakumukha"
+}
+
+###signup
+POST http://localhost:5000/api/signup HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"helloworld",
+    "lastName":"lastname",
+    "email":"email@gmail.com",
+    "password":"dddddddd233"
+}
+###
+#login
+
+POST http://localhost:5000/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"email@gmail.com",
+    "password":"nakumukha"
+}
+
+###
+
+GET http://localhost:5000/api/profile HTTP/1.1
+Content-Type: application/xml
+Authorization: {{token}}
